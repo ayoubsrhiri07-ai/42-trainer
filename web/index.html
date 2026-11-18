@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>42 Trainer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2300babc'/%3E%3Ctext x='50' y='68' font-size='52' font-family='monospace' font-weight='bold' text-anchor='middle' fill='%230b0f14'%3E42%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="side">
+    <a class="brand" href="#/"><span class="logo">42</span><span>Trainer<small>beta</small></span></a>
+    <nav id="nav">
+      <a href="#/" data-r="home">🏠 Tableau de bord</a>
+      <a href="#/lessons" data-r="lessons">📚 Cours</a>
+      <a href="#/funcs" data-r="funcs">🔬 Fonction par fonction</a>
+      <a href="#/exercises" data-r="exercises">🧪 Exercices</a>
+      <a href="#/chain" data-r="chain">⚡ Enchaînement</a>
+      <a href="#/exam" data-r="exam">📝 Mode examen</a>
+      <a href="#/achievements" data-r="achievements">🏆 Succès</a>
+      <a href="#/ideas" data-r="ideas">💡 Idées / retours</a>
+      <a href="#/settings" data-r="settings">⚙️ Réglages</a>
+    </nav>
+    <div id="mini" class="mini"></div>
+  </aside>
+  <main id="main"><div class="loading">Chargement…</div></main>
+</div>
+<canvas id="confetti"></canvas>
+<div id="toasts"></div>
+<div id="modal" class="modal hidden"></div>
+<script src="app.js"></script>
+<script src="lessons.js"></script>
+<script>route();</script>
+</body>
+</html>
